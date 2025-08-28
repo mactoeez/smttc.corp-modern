@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SMTCC - Modern</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="image/new_logo-removebg-preview.png" />
+</head>
+<body>
+
+  <!-- ==================== Navbar ==================== -->
+<nav class="navbar">
+  <!-- Navigation links on LEFT -->
+  <ul id="navMenu" class="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Logo + Hamburger on RIGHT -->
+  <div class="nav-right">
+    <div class="nav-logo">
+      <img src="image/new_logo-removebg-preview.png" class="nav-logo-img" alt="SMTCC Logo" />
+      <span class="nav-logo-text">Shri Mahesh Timber Trading Company</span>
+    </div>
+    <!-- Hamburger toggle at extreme right -->
+    <button id="navToggle" class="nav-toggle">&#9776;</button>
+  </div>
+</nav>
+  <!-- ==================== Hero ==================== -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="brand-logo">
+            <img src="image/new_logo-removebg-preview.png" alt="Company Logo" />
+            <span class="brand-logo-text">Shri Mahesh Timber Trading Company</span>
+        </div>
+      <h3>Trusted Timber & Plywood Supplier</h3>
+      <p>Serving industries for over 55 years with premium timber, flush doors, and packaging solutions.</p>
+      <a href="#contact" class="btn-primary">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- ==================== About ==================== -->
+  <section id="about" class="section about">
+    <h2>About Us</h2>
+    <p>
+      Shri Mahesh Timber Trading Company is a trusted name in timber and plywood. We specialize in high-quality wood products for industrial, commercial, and residential use. Our commitment to precision, delivery, and ethical practices makes us the preferred supplier.
+    </p>
+  </section>
+
+  <!-- ==================== Services ==================== -->
+  <section id="services" class="section services">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Plywood Packaging Boxes</h3>
+        <p>Durable, custom-built solutions for safe transportation of machinery & delicate equipment.</p>
+      </div>
+      <div class="card">
+        <h3>Flush Doors</h3>
+        <p>Strong, smooth-finish doors combining durability with modern aesthetics.</p>
+      </div>
+      <div class="card">
+        <h3>Teakwood Doors</h3>
+        <p>Premium-quality teakwood doors, termite-resistant and elegant.</p>
+      </div>
+      <div class="card">
+        <h3>Plywood & Teakwood Cutsizes</h3>
+        <p>Superior sheets in various cutsizes for furniture, interiors, and construction.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== Products Carousel ==================== -->
+  <section id="products" class="section products">
+    <h2>Our Products</h2>
+    <div class="carousel-container">
+      <div class="carousel" id="carousel">
+        <div class="slide"><img src="image/flushdoor1.jpg" alt="Flush Door" class="zoomable"><p>Flush Door</p></div>
+        <div class="slide"><img src="image/plybox.jpg" alt="Packaging Boxes" class="zoomable"><p>Machinery Boxes</p></div>
+        <div class="slide"><img src="image/plywood.jpg" alt="Plywood Sheet" class="zoomable"><p>Plywood Sheet</p></div>
+        <div class="slide"><img src="image/ripla.jpg" alt="Ripla" class="zoomable"><p>Ripla</p></div>
+      </div>
+      <button class="prev" id="prevBtn">&#10094;</button>
+      <button class="next" id="nextBtn">&#10095;</button>
+    </div>
+  </section>
+
+  <!-- ==================== Contact ==================== -->
+  
+  
+    </section>
+    <section id="contact" class="section contact">
+    <h2>Reach Us</h2>
+    <form id="contactForm">
+        <input type="text" id="name" name="Name" placeholder="Your Name" required />
+        <input type="email" id="email" name="Email" placeholder="Your Email" required />
+        <textarea id="message" name="Message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    </section>
+
+  <!-- ==================== Footer ==================== -->
+  <footer>
+    <p>&copy; 2025 Shri Mahesh Timber Trading Co. | +91-9479930227 | Indore, M.P.</p>
+  </footer>
+
+  <!-- ==================== Modal / Zoom ==================== -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
