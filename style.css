@@ -377,3 +377,61 @@ footer {
     font-size: 1rem;
   }
 }
+
+/* ===== Portfolio Section ===== */
+.portfolio {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.portfolio h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* PDF container */
+.portfolio-pdf {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.portfolio-pdf iframe {
+  width: 100%;
+  height: 600px; /* desktop height */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Mobile fallback button */
+.portfolio-link {
+  display: none;
+  margin-top: 20px;
+}
+
+.portfolio-link a {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.portfolio-link a:hover {
+  background: #e65500;
+}
+
+/* ===== Responsive Styles ===== */
+@media (max-width: 768px) {
+  .portfolio-pdf {
+    display: none; /* hide PDF embed on mobile */
+  }
+  .portfolio-link {
+    display: block; /* show button */
+  }
+}
